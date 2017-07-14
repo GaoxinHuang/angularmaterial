@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div ng-controller="AppCtrl">
+    <div>
+        <md-button class="md-primary md-raised" ng-click="showConfirm($event)">
+            Confirm Dialog
+        </md-button>
+
+        <md-button class="md-primary md-raised" ng-click="showTabDialog($event)" >
+            Tab Dialog
+        </md-button>
+    </div>
+    <div ng-if="status" id="status">
+        <b layout="row" layout-align="center center" class="md-padding">
+            {{status}}
+        </b>
+    </div>
+</div>
+
